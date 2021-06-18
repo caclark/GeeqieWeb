@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="generator" content="HTML Tidy for HTML5 for Linux version 5.6.0">
+    <title>Geeqie - Image Viewer for Linux</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="generator" content="Geany 1.35">
+    <link rel="icon" href="../geeqie.svg">
+</head>
+<body>
+    <h1>Geeqie AppImages</h1>
+    <p>Download an AppImage and make it executable by:</p>
+    <pre>
+        <code>chmod +x &lt;filename&gt;</code>
+      </pre>
+    <p>The file may be given a simple name e.g.:</p>
+    <pre>
+        <code>mv &lt;filename&gt; geeqie</code>
+      </pre>
+    <p>Or you may create a symbolic link:</p>
+    <pre>
+        <code>ln -s &lt;filename&gt; geeqie</code>
+      </pre>
+    <h2>Desktop integration</h2>
+    <p>The AppImage may be run simply as an executable, but having a .desktop file will provide better system
+    integration.</p>
+    <p>The following steps are suggested -</p>
+    <p>Download the .desktop file and icon:</p>
+    <pre>
+        <code>
+          copy <a href="./geeqie.desktop">geeqie.desktop</a> to $HOME/.local/share/applications/
+          copy <a href="./geeqie.svg">geeqie.svg</a> to $HOME/.local/share/icons/
+        </code>
+      </pre>Create a local binaries folder, and move the AppImage there:
+    <pre>
+        <code>mkdir $HOME/bin
+        mv &lt;appimage_file&gt; $HOME/bin</code>
+      </pre>Create a symbolic link to the latest Geeqie AppImage (this must be amended each time you download a new
+AppImage):
+    <pre>
+        <code>ln -sf $HOME/bin/&lt;appimage_file&gt; $HOME/bin/geeqie</code>
+      </pre>
+    <hr>
+    <p>These AppImages have been created with Ubuntu 20.04.</p>
+    <table>
+        <tr>
+            <td>
+                <a href="./Geeqie-v1.6+20210617.AppImage">Geeqie-v1.6+20210617.AppImage</a>
+            </td>
+            <td>Sigma .x3f files</td>
+        </tr>
+        <tr>
+            <td>
+                <a href="./Geeqie-v1.6+20210614.AppImage">Geeqie-v1.6+20210614.AppImage</a>
+            </td>
+            <td>Canon .cr3 files</td>
+        </tr>
+        <tr>
+            <td>
+                <a href="./Geeqie-v1.6+20210613.AppImage">Geeqie-v1.6+20210613.AppImage</a>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
